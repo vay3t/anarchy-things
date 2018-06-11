@@ -18,13 +18,13 @@ pg_cmd() {
 
 start_db() {
     if ! systemctl status $PG_SERVICE >/dev/null; then
-	service $PG_SERVICE start
+	systemctl start $PG_SERVICE
     fi
 }
 
 stop_db() {
     if systemctl status $PG_SERVICE >/dev/null; then
-	service $PG_SERVICE stop
+	systemctl stop $PG_SERVICE
     fi
 }
 
