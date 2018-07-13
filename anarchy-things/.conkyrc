@@ -327,8 +327,10 @@ ${offset 240}${membar 3,100}
 ${offset 240}${color slate grey}SWAP: ${color }$swapperc% $swap/$swapmax
 ${offset 240}${swapbar 3,100}
 
-${offset 240}${color slate grey}/dev/sda2:  ${color }${fs_free /}/${fs_size /}
+${offset 240}${color slate grey}ROOT:  ${color }${fs_free /}/${fs_size /}
 ${offset 240}${fs_bar 3,100 /}
+${offset 240}${color slate grey}HOME:  ${color }${fs_free /home}/${fs_size /home}
+${offset 240}${fs_bar 3,100 /home}
 
 ${offset 240}${color slate grey}eth0: ${color }${addrs eth0}
 ${offset 240}${color}Up: ${color }${upspeed eth0}
